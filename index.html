@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo Task Manager</h1>
+        <div>
+            <p>Add new tasks</p>
+            <form id="taskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" placeholder="Enter task name">
+
+                <label for="taskDescription">Description:</label>
+                <input type="text" id="taskDescription" placeholder="Enter task description">
+
+                <label for="completed">Completed:</label>
+                <select id="completed">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <h1>List of tasks</h1>
+        <button id="displayTasks">Display Tasks</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
